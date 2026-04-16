@@ -1,0 +1,22 @@
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(100) NOT NULL,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    gender VARCHAR(10)
+);
+
+INSERT INTO users (username, password, name, email, gender) VALUES
+('admin', 'admin123', 'Admin User', 'admin@example.com', 'Male'),
+('john_doe', 'password123', 'John Doe', 'john@example.com', 'Male'),
+('jane_smith', 'qwerty123', 'Jane Smith', 'jane@example.com', 'Female'),
+('michael_b', 'pass1234', 'Michael Brown', 'michael@example.com', 'Male'),
+('sarah_w', 'hello123', 'Sarah Wong', 'sarah@example.com', 'Female'),
+('david_k', 'abc12345', 'David Kim', 'david@example.com', 'Male'),
+('lisa_t', 'lisa2024', 'Lisa Tan', 'lisa@example.com', 'Female'),
+('ryan_lee', 'ryanpass', 'Ryan Lee', 'ryan@example.com', 'Male'),
+('emma_chen', 'emma999', 'Emma Chen', 'emma@example.com', 'Female'),
+('kevin_foo', 'kevin321', 'Kevin Foo', 'kevin@example.com', 'Male'),
+('olivia_ng', 'olivia888', 'Olivia Ng', 'olivia@example.com', 'Female'),
+('test_user', 'test123', 'Test User', 'test@example.com', 'Other');
